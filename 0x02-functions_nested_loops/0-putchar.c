@@ -1,5 +1,5 @@
-#include "main.h"
-#include <stdio.h>
+#include <main.h>
+
 /**
  * main - Program that prints _putchar, followed by a new line.
  * Return: Program should return 0.
