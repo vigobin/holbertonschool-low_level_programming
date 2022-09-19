@@ -5,9 +5,9 @@
  * Return: 0
  */
 
-int print_last_digit(int)
+int print_last_digit(int n)
 {
-	int n, remainder;
+	int remainder;
 	remainder = n % 10;
 	return (remainder);
 }
