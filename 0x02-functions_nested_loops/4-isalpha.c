@@ -2,8 +2,9 @@
 
 /**
  * main - Function that checks for alphabetic character.
- * Return: 00
+ * Return: 0
  */
+
 int _isalpha(int c)
 {
 	if (( c >= 'a' && c <= 'z' ) || ( c >= 'A' && c <= 'Z' ))
