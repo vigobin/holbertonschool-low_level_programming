@@ -1,4 +1,4 @@
-#incude "main.h"
+#include "main.h"
 
 /**
  * main - Function that prints 10 times the alphabet.
