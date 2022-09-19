@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * main - Program that prints _putchar, followed by a new line.
  * Return: Program should return 0.
@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	_putchar("");
+	_putchar("_");
 	_putchar("p");
 	_putchar("u");
 	_putchar("t");
