@@ -19,13 +19,13 @@ void times_table(void)
 		for (num2 = 1; num2 <= 9; num2++)
 		{
 			mult = (num1 * num2);
-			if (mult / 10 > 0)
+			if ((mult / 10) > 0)
 			{
-				_putchar(mult / 10  + '0');
+				_putchar((mult / 1)0  + '0');
 			}
 			else 
 			{
-				_putchar(mult % 10 + '0');
+				_putchar((mult % 10) + '0');
 			}
 		}
 		_putchar('\n');
