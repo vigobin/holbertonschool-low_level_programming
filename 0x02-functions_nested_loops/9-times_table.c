@@ -16,13 +16,13 @@ void times_table(void)
 		_putchar('0');
 		_putchar(',');
 		_putchar(' ');
-		
 		for (num2 = 1; num2 <= 9; num2++)
 		{
 			mult = (num1 * num2);
 			_putchar(mult + '0');
 
 		}
+		_putchar('\n');
 	}
 	_putchar('\n');
 }
