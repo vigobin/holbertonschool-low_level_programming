@@ -11,5 +11,4 @@ int print_last_digit(int n)
 	remainder = (n % 10);
 	_putchar(remainder);
 	_putchar(remainder);
-	return (0);
 }
