@@ -2,13 +2,14 @@
 
 /**
  * print_last_digit - Function that prints the last digit of a number.
- * #n : integer input.
+ * @n : integer input.
  * Return: 0
  */
 
 int print_last_digit(int n)
 {
 	int remainder;
+
 	remainder = (n % 10);
 	if (remainder < 0)
 	{
