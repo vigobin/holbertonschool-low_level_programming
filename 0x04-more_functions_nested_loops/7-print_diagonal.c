@@ -2,7 +2,7 @@
 
 /**
  * print_diagonal - function that draws a diagonal line on the terminal.
- * @n : number of time to print. 
+ * @n : number of time to print.
  * Return: print \.
  */
 
@@ -18,7 +18,7 @@ void print_diagonal(int n)
 			{
 				_putchar(' ');
 			}
-			_putchar('\');
+			_putchar('\\');
 			_putchar('\n');
 		}
 	
