@@ -2,7 +2,7 @@
 
 /**
  * print_square - Function that prints a square.
- * @size : size input. 
+ * @size : size input.
  * Return: display square.
  */
 
@@ -12,10 +12,14 @@ void print_square(int size)
 
 	if (size > 0)
 	{
-		for(i = 0; i < size; i++)
+		for (i = 0; i < size; i++)
 		{
 			_putchar('#');
+			for (i = 0; i < size; i++)
+				_putchar('#');
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
+	else
+		_putchar('\n');
 }
