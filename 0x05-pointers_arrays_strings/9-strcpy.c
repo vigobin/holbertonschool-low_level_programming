@@ -10,9 +10,9 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	int count;
+	int count = 0;
 
-	for (count = 0; src[count]; count++)
+	for (; src[count] != '\0'; count++)
 	{
 		dest[count] = src[count];
 	}
