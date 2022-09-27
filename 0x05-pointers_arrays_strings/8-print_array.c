@@ -18,5 +18,6 @@ void print_array(int *a, int n)
 			printf("%d", a[count]);
 		else
 			printf(", %d", a[count]);
+	}
 	printf("\n");
 }
