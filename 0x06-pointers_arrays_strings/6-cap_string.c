@@ -9,14 +9,14 @@
 char *cap_string(char *str)
 {
 	int count, count2;
-	char sep[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+	char sep[13] = {' ', '\t', '\n', ',', ';', '.', '!',
+		 '?', '"', '(', ')', '{', '}'};
 
-	count = 0;
-	while (str[count])
+	for (count = 0; str[count]; count++)
 	{
-		count++;
 		if (count == 0 && str[count] >= 'a' && str[count] <= 'z')
 			str[count] = str[count] - 32;
+
 		for (count2 = 0; count2 < 13; count2++)
 		{
 			if (str[count] == sep[count2])
