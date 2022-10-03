@@ -8,11 +8,10 @@
 
 char *cap_string(char *str)
 {
-	int count, count2 = 0;
-	char sep;
+	int count, count2;
+	char sep[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 
-	sep[13] = ('_', '\t', '\n', ',', ';', '.'; '!', '?', '"'; '(', ')', '{', '}');
-
+	count = 0;
 	while (str[count])
 	{
 		if (count == 0 && str[count] >= 'a' && str[count] <= 'z')
@@ -21,12 +20,11 @@ char *cap_string(char *str)
 		{
 			if (str[count] == sep[count2])
 			{
-				if (str[count + 1] >= 'a' && str[count + a] <= 'z')
+				if (str[count + 1] >= 'a' && str[count + 1] <= 'z')
 					str[count + 1] = str[count + 1] - 32;
 			}
 		}
 		count++;
 	}
 	return (str);
-
 }
