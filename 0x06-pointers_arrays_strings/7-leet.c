@@ -14,7 +14,7 @@ char *leet(char *str)
 
 	for (count = 0; str[count]; count++)
 	{
-		for (count2 = 0, count2 < 10; count2++)
+		for (count2 = 0; count2 < 10; count2++)
 		{
 			if (str[count] == a[count2])
 			{
