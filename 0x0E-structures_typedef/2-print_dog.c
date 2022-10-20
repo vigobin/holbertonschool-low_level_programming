@@ -5,13 +5,13 @@
 /**
  *print_dog - function that prints a struct dog.
  *@d: struct to be printed.
- *Return: Nil or exit.
+ *Return: Nil.
  */
 
 void print_dog(struct dog *d)
 {
 	if (d == NULL)
-		exit(0);
+		return;
 	if (d->name == NULL)
 		printf("Name: (nil)\n");
 	if (d->age <= 0)
