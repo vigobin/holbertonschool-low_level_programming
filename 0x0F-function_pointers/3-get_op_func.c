@@ -11,16 +11,15 @@
 
 int (*get_op_func(char *s))(int, int)
 {
-	op_t opsel[];
 	int i;
 
-	opsel = {{"+", op_add}, {"-", op_sub},
+	op_t opsel[] = {{"+", op_add}, {"-", op_sub},
 		{"*", op_mul}, {"/", op_div}, {"%", op_mod}};
 
 	while (opsel[i].op)
 	{
 		if (*(opsel[i].op) == *s)
-			return (op_s[i].f);
+			return (opsel[i].f);
 		i++;
 	}
 	return (NULL);
